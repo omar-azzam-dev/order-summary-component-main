@@ -1,0 +1,125 @@
+/* Global Styling */
+html {
+    font-size: 16px;
+    --pale-blue: hsl(225, 100%, 94%);
+    --bright-blue: hsl(245, 75%, 52%);
+    --very-pale-blue: hsl(225, 100%, 98%);
+    --desaturated-blue: hsl(224, 23%, 55%);
+    --dark-blue: hsl(223, 47%, 23%);
+    --text-content-color: rgba(0, 0, 0, 0.801);
+}
+body {
+    background-image: url("./images/pattern-background-desktop.svg");
+    background-repeat: repeat-x;
+    background-color: var(--pale-blue);
+    font-family: "Red Hat Display";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@media screen and (max-width: 400px) {
+    body {
+        background-image: url("./images/pattern-background-mobile.svg");
+    }
+}
+/* Order Summary Styling */
+.order-summary {
+    max-width: 350px;
+    background-color: white;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.order-summary__illustration-hero {
+    width: 100%;
+    border-radius: 15px 15px 0px 0px;
+}
+.heading {
+    font-weight: 700;
+    font-size: 1.7rem;
+}
+.order-summary__title {
+    margin-top: 40px;
+}
+.text-content {
+    font-weight: 500;
+    color: var(--text-content-color);
+}
+.order-summary__desc {
+    margin-top: 15px;
+    text-align: center;
+    width: fit-content;
+}
+.order-summary__plan {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin-top: 30px;
+    background-color: var(--pale-blue);
+    padding: 10px;
+    border-radius: 5px;
+}
+.order-summary__plan-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.bold-text {
+    color: black;
+    font-weight: 700;
+}
+.order-summary__plan-type {
+    width: 90px;
+    margin-left: 15px;
+}
+.main-link {
+    color: var(--bright-blue);
+    text-decoration: underline;
+    font-weight: 600;
+}
+.main-link:hover {
+    color: var(--desaturated-blue);
+    text-decoration: none;
+}
+.main-link:active {
+    color: var(--bright-blue);
+}
+.opt-btn {
+    background-color: gray;
+    width: 90%;
+    border-radius: 6px;
+    padding: 16px 0px;
+    text-align: center;
+    text-decoration: none;
+    font-weight: 600;
+}
+.opt-btn_main {
+    background-color: var(--bright-blue);
+    color: white;
+}
+.opt-btn_main:hover {
+    background-color: var(--desaturated-blue);
+    color: rgba(255, 255, 255, 0.932);
+}
+.opt-btn_main:active {
+    background-color: var(--bright-blue);
+}
+.opt-btn_second {
+    background-color: transparent;
+    color: var(--text-content-color);
+}
+.opt-btn_second:hover {
+    color: black;
+}
+.opt-btn_second:active {
+    color: var(--text-content-color);
+}
+.order-summary__main-btn {
+    margin-top: 30px;
+}
+.order-summary__second-btn {
+    margin: 15px 0px 40px 0px;
+}
